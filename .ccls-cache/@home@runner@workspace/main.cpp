@@ -1,4 +1,4 @@
-//Toba Mohaqqeq 
+//Toba Mohaqqeq ʕ•ᴥ•ʔ
 //Extra credit 
 //COMSC-210
 
@@ -83,4 +83,5 @@ cout << endl;
         } 
     }
     return 0;
-}//milestone 2
+}
+//I hope this assignment helps me geet a good grade.⛄(˶˃ ᵕ ˂˶)
