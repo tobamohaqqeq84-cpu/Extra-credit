@@ -44,5 +44,6 @@ int main(){
         cout << "Average = " << fixed << setprecision(2) << average << endl;
     }
     cout << "\nTotal number of movies: " << movieRatings.size() << endl;
+    
     return 0;
-}//milestone 1
+}//milestone 2
