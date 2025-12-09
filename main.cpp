@@ -44,6 +44,30 @@ int main(){
         cout << "Average = " << fixed << setprecision(2) << average << endl;
     }
     cout << "\nTotal number of movies: " << movieRatings.size() << endl;
-    
+
+
+    double bestAverage = 0.0;
+
+    for (const auto &entry : movieRatings){
+        int sum = 0;
+        for (int r : entry.second){
+            sum += r;
+        }
+        double average = static_cast<double>(sum) / entry.second.size();
+        if (average > bestAverage){
+            bestAverage = average;
+        }
+    }
+    cout << "Best average rating: " << fixed << setprecision(2) << bestAverage << endl;
+    cout << "Movies with this rating: ";
+
+    for (const auto &entry : movieRatings){
+        int sum = 0;
+        for (int r : entry.second){
+            sum += r;
+        }
+        double average =static_cast<double>(sum)/entry.second.size();
+        if (average == bestAverage){}
+    }
     return 0;
 }//milestone 2
