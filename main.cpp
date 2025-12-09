@@ -67,7 +67,9 @@ int main(){
             sum += r;
         }
         double average =static_cast<double>(sum)/entry.second.size();
-        if (average == bestAverage){}
+        if (average == bestAverage){
+            cout << entry.first << endl;
+        }
     }
     return 0;
 }//milestone 2
