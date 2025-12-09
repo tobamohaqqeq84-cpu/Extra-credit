@@ -12,18 +12,21 @@
 using namespace std;
 
 int main(){
-    map<string, vector<int>> movieRatings;
+    map<string, vector<int>> movieRatings; //map to store movie ratings
 
-    ifstream inFile("210-xc2-FA25.txt");
+    ifstream inFile("210-xc2-FA25.txt"); //open the file
     if (!inFile){
-        cout << "Error opening file." << endl;
+        cout << "Error opening file." << endl; 
         return 1;
     }
     string line;
     int ratings;
 
     while (inFile >> line >> ratings){
-        movieRatings[line].push_back(ratings);
+        movieRatings[line].push_back(ratings); //add the rating to the vector of ratings for the movie
+        //Milestone 1:
+
+        cout << 
     }
     for (const auto &entry : movieRatings){
         cout << entry.first << " ";
@@ -40,7 +43,7 @@ int main(){
             cout << r << " ";
             sum += r;
         }
-        double average = static_cast<double>(sum) / entry.second.size();
+        double average = static_cast<double>(sum) / entry.second.size(); //calculate the average rating
         cout << "Average = " << fixed << setprecision(2) << average << endl;
     }
     cout << "\nTotal number of movies: " << movieRatings.size() << endl;
@@ -55,6 +58,7 @@ int main(){
         }
         double average = static_cast<double>(sum) / entry.second.size();
         if (average > bestAverage){
+          
             bestAverage = average;
         }
     }
@@ -69,7 +73,7 @@ int main(){
         double average =static_cast<double>(sum)/entry.second.size();
         if (average == bestAverage){
             cout << entry.first << endl;
-        }
+        } 
     }
     return 0;
 }//milestone 2
